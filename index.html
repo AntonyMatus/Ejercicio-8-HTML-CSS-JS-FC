@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" /> 
+    
+    <!-- Scripts -->
+   
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    
+    <title>Ficha Alumno - Ejercicio 6</title>
+</head>
+<body>
+    <div class="frame2045">
+        <div class="frame2005">
+            <div class="frame1994">
+                <div class="frame123">
+                    <div class="cover">
+                    </div>
+                </div>
+                <div class="frame1986">
+                    <p class="nombreAlumno">Nombre Almuno</p>
+                    <div class="frame1927">
+                        <a class="icon"><i class="fas fa-map-marker-alt" data-fa-transform="rotate-90"></i></a>
+                        <div class="frame19272">
+                            <p class="valencia">Valencia</p>
+                        </div>
+                        <div class="frame1928">
+                            <p class="barra">|</p>
+                        </div>
+                        <div class="frame1926">
+                            <p class="españa">España</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="frame2041">
+                <div class="frame1433">
+                    <p class="nombreYApellidos">Nombre y Apellidos</p>
+                    <input class="frame1328" placeholder="Nombre Alumno"></input>
+                </div>
+                <div class="frame2038">
+                    <div class="frame14332">
+                        <p class="telefono">Nº Teléfono</p>
+                        <input type="text" class="frame13282" placeholder="+34 456 456 456">
+                    </div>
+                    <div class="frame2023">
+                        <p class="email">Email</p>
+                        <input type="text" class="frame13283" placeholder="example@example.com">
+                    </div>
+                </div>
+                <div class="frame2039">
+                    <div class="frame2024">
+                        <p class="pais">Pais</p>
+                        <select name="pais" id="pais" class="frame13284">
+                            <option value="España">España</option>
+                            <option value="Italia">Italia</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="México">México</option>
+                            <option value="Chile">Chile</option>
+                        </select>
+                    </div>
+                    <div class="frame2027">
+                        <p class="ciudad">Ciudad</p>
+                        <select name="ciudad" id="ciudad" class="frame13285">
+                            <option value="Valencia">Valencia</option>
+                            <option value="Cordoba">Cordoba</option>
+                            <option value="Zaragoza">Zaragoza</option>
+                            <option value="cozumel">Cozumel</option>
+                            <option value="Santiago">Santiago de Chile</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="frame2040">
+                    <div class="frame2028">
+                        <p class="traslado">Traslado</p>
+                        <select name="traslado" id="traslado" class="frame13286">
+                            <option value="si">Si</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="frame2025">
+                        <p class="presencialidad">Presencialidad</p>
+                        <select name="presencialidad" id="presencialidad" class="frame13287">
+                            <option value="presencial">Presencial</option>
+                            <option value="remoto">Remoto</option>
+                            <option value="mixto">Mixto</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="frame2026">
+                    <p class="documentocv">Documento CV</p>
+                    <div class="frame20272">
+                        <button class="subir">
+                            <a class="imgSubir" ><i class="far fa-cloud-upload-alt"></i></a>
+                            <p class="pSubir">Subir de nuevo</p>
+                            
+                        </button>
+                        <button class="borrar">
+                            <a class="imgBorrar"><i class="far fa-trash-alt"></i></a>
+                            <p class="pBorrar">Borrar</p>
+                            
+                        </button>
+                    </div>
+                </div>
+                <div class="frame1380">
+                    <div class="frame14333">
+                        <p class="etiquetas">Etiquetas</p><br>
+                        <select name="states[]" class="js-example-basic-multiple" id="frame13288"  multiple="multiple">
+                           <option value="escribe">Escribe para buscar</option>
+                           <option value="html">HTML</option>
+                           <option value="JS">JavaScrip</option>
+                           <option value="react">React</option>
+                           <option value="Pyton">PYTHON</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <iframe src="./doc/Antony Rebolledo Matus.pdf" width="100%" height="100%" frameborder="0"></iframe>
+    <script>
+        $(document).ready(function() {
+            $('.js-example-basic-multiple').select2();
+        });
+    </script>
+</body>
+</html>
